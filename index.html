@@ -800,32 +800,176 @@ a.school-item:hover .school-link-arrow {
    RESPONSIVE
    ============================================ */
 @media (max-width: 768px) {
+  /* NAV */
   .nav-links { display: none; }
   .hamburger { display: flex; }
-  .hero { padding: 60px 0 40px; }
-  .hero-title { font-size: 2.6rem; }
-  .hero-title-sub { font-size: 1rem; }
-  .hero-highlight p { font-size: 1.2rem; }
-  .hero-highlight p em { font-size: 1.6rem; }
-  .hero-meta { flex-direction: column; align-items: center; }
-  .section { padding: 60px 0; }
-  .section-title h2 { font-size: 1.4rem; }
-  .contents-grid { grid-template-columns: 1fr; }
-  .jobs-grid { grid-template-columns: 1fr 1fr; }
-  .job-card-img { height: 140px; }
-  .schools-list { grid-template-columns: 1fr 1fr; }
+
+  /* HERO */
+  .hero { padding: 48px 0 36px; }
+  .hero-title { font-size: 2.4rem; }
+  .hero-title-sub { font-size: 0.95rem; }
+  .hero-catch { font-size: 0.9rem; letter-spacing: 1px; }
+  .hero-highlight { padding: 14px 20px; margin-bottom: 24px; }
+  .hero-highlight p { font-size: 1.1rem; }
+  .hero-highlight p em { font-size: 1.5rem; }
+  .hero-meta { flex-direction: column; align-items: center; gap: 10px; }
+  .hero-meta-item { padding: 10px 20px; }
+  .hero-btns { flex-direction: column; align-items: center; gap: 12px; }
+  .hero-btns .btn { width: 100%; max-width: 320px; }
+  .hero-note { font-size: 0.8rem; padding: 6px 14px; }
+  .hero-tag { font-size: 0.75rem; padding: 5px 16px; }
+
+  /* SECTIONS */
+  .section { padding: 48px 0; }
+  .section-title { margin-bottom: 32px; }
+  .section-title h2 { font-size: 1.3rem; }
+  .section-title .subtitle { font-size: 0.85rem; }
+  .container { padding: 0 16px; }
+
+  /* CONCEPT */
+  .concept-quote { font-size: 1.1rem; line-height: 1.9; }
+  .concept-body { font-size: 0.85rem; }
+  .concept-body br { display: none; }
+
+  /* COMPARISON TABLES */
+  .compare-table { font-size: 0.75rem; }
+  .compare-table thead th { padding: 12px 8px; font-size: 0.75rem; }
+  .compare-table thead th:first-child { width: 22%; }
+  .compare-table tbody td { padding: 12px 8px; font-size: 0.75rem; line-height: 1.5; }
+  .compare-lead { font-size: 0.9rem; }
+  .compare-lead br { display: none; }
+  .compare-bottom { padding: 20px 16px; font-size: 0.85rem; }
+  .compare-bottom br { display: none; }
+
+  /* CONTENTS */
+  .contents-grid { grid-template-columns: 1fr; gap: 16px; }
+  .card-header { padding: 16px 20px; }
+  .card-header h3 { font-size: 0.95rem; }
+  .card-body { padding: 16px 20px; }
+
+  /* JOBS */
+  .jobs-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .job-card-img { height: 130px; }
+  .job-card-body { padding: 12px 14px 16px; }
+  .job-name { font-size: 0.85rem; }
+
+  /* SCHOOLS */
+  .schools-list { grid-template-columns: 1fr 1fr; gap: 6px; }
+  .school-item { padding: 10px 8px; font-size: 0.7rem; }
+  .schools-stats .num { font-size: 2.4rem; }
+
+  /* BONUS */
+  .bonus-title { font-size: 1.1rem; }
+  .bonus-photos { gap: 12px; }
+  .bonus-photo img { height: 160px; }
+  .bonus-desc { font-size: 0.85rem; }
+  .bonus-desc br { display: none; }
+
+  /* BRIEFING */
+  .briefing-schedule { grid-template-columns: 1fr; }
+  .briefing-box { padding: 24px 20px; }
+  .briefing-title { font-size: 1.05rem; }
+  .briefing-desc { font-size: 0.85rem; }
+  .briefing-desc br { display: none; }
+
+  /* DIAGNOSIS */
+  .diagnosis-tabs { flex-direction: column; align-items: center; gap: 10px; }
+  .diag-tab { width: 100%; max-width: 320px; text-align: center; padding: 14px 24px; font-size: 0.95rem; }
+  .diag-q-text { font-size: 1.05rem; }
+  .diag-option { padding: 14px 20px; font-size: 0.9rem; }
+  .result-score { font-size: 3rem; }
+  .result-label { font-size: 1.1rem; }
+  .result-detail { padding: 20px 16px; font-size: 0.85rem; }
+  .diag-result .btn-primary { font-size: 1rem; padding: 16px 40px; }
+
+  /* ACCESS */
   .access-row { flex-direction: column; gap: 4px; }
-  .access-label { width: auto; }
-  .concept-quote { font-size: 1.2rem; }
-  .diagnosis-tabs { flex-direction: column; align-items: center; }
+  .access-label { width: auto; font-size: 0.85rem; }
+  .access-value { font-size: 0.85rem; }
+
+  /* CTA */
+  .cta { padding: 48px 0; }
+  .cta h2 { font-size: 1.3rem; }
+
+  /* MID CTA */
+  .mid-cta { padding: 36px 0; }
+  .mid-cta-text { font-size: 0.9rem; }
 }
+
 @media (max-width: 480px) {
-  .hero-title { font-size: 2rem; }
-  .jobs-grid { grid-template-columns: 1fr; }
+  /* HERO */
+  .hero { padding: 36px 0 28px; }
+  .hero-title { font-size: 1.9rem; }
+  .hero-catch { font-size: 0.8rem; }
+
+  /* TABLES - カード型に変換 */
+  .compare-table thead { display: none; }
+  .compare-table, .compare-table tbody, .compare-table tr, .compare-table td {
+    display: block;
+    width: 100%;
+  }
+  .compare-table tr {
+    margin-bottom: 16px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  }
+  .compare-table tbody td:first-child {
+    font-size: 0.8rem;
+    padding: 12px 16px;
+    text-align: left;
+    background: #2ea46a;
+    color: #fff;
+  }
+  .ba-table tbody td:first-child {
+    background: #2ea46a;
+    color: #fff;
+  }
+  .compare-table tbody td:nth-child(2) {
+    padding: 12px 16px;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #eee;
+  }
+  .compare-table tbody td:nth-child(2)::before {
+    content: "△ 従来";
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #bbb;
+    margin-bottom: 4px;
+  }
+  .compare-table tbody td:nth-child(3) {
+    padding: 12px 16px;
+    font-size: 0.8rem;
+  }
+  .compare-table tbody td:nth-child(3)::before {
+    content: "◎ Umeeets!!!";
+    display: block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #2ea46a;
+    margin-bottom: 4px;
+  }
+
+  /* JOBS */
+  .jobs-grid { grid-template-columns: 1fr; gap: 14px; }
   .job-card-img { height: 200px; }
-  .schools-list { grid-template-columns: 1fr; }
-  .hero-btns { flex-direction: column; align-items: center; }
-  .btn { width: 100%; max-width: 320px; }
+  .job-card-body { padding: 14px 18px 18px; }
+
+  /* SCHOOLS */
+  .schools-list { grid-template-columns: 1fr; gap: 6px; }
+
+  /* BONUS */
+  .bonus-photos { grid-template-columns: 1fr; }
+  .bonus-photo img { height: 180px; }
+
+  /* BUTTONS */
+  .btn { width: 100%; max-width: 320px; padding: 14px 24px; font-size: 0.95rem; }
+  .btn-diag-hero { font-size: 0.95rem; }
+
+  /* GENERAL */
+  .section-title h2 { font-size: 1.2rem; }
+  .concept-quote { font-size: 1rem; }
 }
 
 /* ============================================
@@ -1034,16 +1178,7 @@ a.school-item:hover .school-link-arrow {
 }
 .briefing-cta { text-align: center; }
 
-@media (max-width: 768px) {
-  .compare-table { font-size: 0.8rem; }
-  .compare-table thead th { padding: 14px 12px; font-size: 0.85rem; }
-  .compare-table tbody td { padding: 14px 12px; font-size: 0.8rem; }
-  .briefing-schedule { grid-template-columns: 1fr; }
-  .briefing-box { padding: 24px; }
-}
-@media (max-width: 480px) {
-  .compare-table { display: block; overflow-x: auto; white-space: nowrap; }
-}
+/* responsive overrides handled in main RESPONSIVE section above */
 
 /* ============================================
    ANIMATIONS
@@ -1466,7 +1601,7 @@ a.school-item:hover .school-link-arrow {
         <div class="briefing-slot">
           <div class="date">3月25日（水）</div>
           <div class="time">13:30〜</div>
-          <span class="status ended">終了</span>
+          <span class="status open">受付中</span>
         </div>
         <div class="briefing-slot">
           <div class="date">3月26日（木）</div>
