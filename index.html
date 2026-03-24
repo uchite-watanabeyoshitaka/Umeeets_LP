@@ -1,0 +1,2001 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Umeeets!!! - 職業体験型イベント｜2026年6月10日＠プレミストドーム</title>
+<meta name="description" content="約30職種を1日で体験！高校生向け職業体験型イベントUmeeets!!!（ユーミーツ）。2026年6月10日（水）プレミストドームにて開催。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+<style>
+/* ============================================
+   RESET & BASE
+   ============================================ */
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+  font-family: 'Noto Sans JP', 'Lato', sans-serif;
+  color: #333;
+  background: #fff;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+a { color: inherit; text-decoration: none; }
+ul { list-style: none; }
+
+/* ============================================
+   UTILITY
+   ============================================ */
+.container { max-width: 1000px; margin: 0 auto; padding: 0 20px; }
+.section { padding: 80px 0; }
+.section-title {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.section-title h2 {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+.section-title .en {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #2ea46a;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+.section-title .subtitle {
+  font-size: 0.95rem;
+  color: #666;
+  margin-top: 8px;
+}
+.accent { color: #2ea46a; }
+.btn {
+  display: inline-block;
+  padding: 16px 48px;
+  border-radius: 60px;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+.btn-primary {
+  background: linear-gradient(135deg, #ff6b35 0%, #e84518 100%);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(232,69,24,0.35);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(232,69,24,0.45);
+}
+.btn-outline {
+  background: transparent;
+  color: #2ea46a;
+  border: 2px solid #2ea46a;
+}
+.btn-outline:hover {
+  background: #2ea46a;
+  color: #fff;
+}
+.btn-diag-hero {
+  background: #fff;
+  color: #333;
+  border: 3px solid #333;
+  font-weight: 900;
+  position: relative;
+  overflow: hidden;
+  animation: diag-bounce 2.5s ease-in-out infinite;
+}
+.btn-diag-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,107,53,0.15), transparent);
+  animation: diag-shimmer 2.5s ease-in-out infinite;
+}
+.btn-diag-hero:hover {
+  background: #333;
+  color: #fff;
+  border-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+}
+@keyframes diag-bounce {
+  0%, 100% { transform: translateY(0); }
+  40% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+  60% { transform: translateY(0); }
+  70% { transform: translateY(-3px); }
+  80% { transform: translateY(0); }
+}
+@keyframes diag-shimmer {
+  0%, 40% { left: -100%; }
+  60%, 100% { left: 100%; }
+}
+
+/* ============================================
+   HEADER / NAV
+   ============================================ */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1px 10px rgba(0,0,0,0.06);
+  transition: all 0.3s ease;
+}
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+.logo {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #2ea46a;
+  letter-spacing: 1px;
+}
+.logo span { color: #333; font-size: 0.7rem; font-weight: 500; margin-left: 8px; letter-spacing: 0; }
+.nav-links { display: flex; gap: 28px; align-items: center; }
+.nav-links a {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: #2ea46a; }
+.nav-cta {
+  padding: 8px 24px !important;
+  font-size: 0.8rem !important;
+  border-radius: 30px !important;
+}
+.hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+.hamburger span { display: block; width: 24px; height: 2px; background: #333; transition: all 0.3s; }
+.mobile-nav {
+  display: none;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  padding: 24px;
+  z-index: 999;
+}
+.mobile-nav.active { display: block; }
+.mobile-nav a {
+  display: block;
+  padding: 12px 0;
+  font-size: 1rem;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero {
+  margin-top: 64px;
+  position: relative;
+  background: url('プレミストドーム写真.jpg') center center / cover no-repeat;
+  overflow: hidden;
+  padding: 80px 0 60px;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(255,255,255,0.60);
+}
+.hero-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+.hero-tag {
+  display: inline-block;
+  background: #2ea46a;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 6px 20px;
+  border-radius: 30px;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+.hero-catch {
+  font-size: 1.1rem;
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 16px;
+  letter-spacing: 2px;
+}
+.hero-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #2ea46a;
+  letter-spacing: 2px;
+  margin-bottom: 8px;
+  line-height: 1.1;
+}
+.hero-title-sub {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+.hero-meta {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+.hero-meta-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 14px 28px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-meta-text { font-size: 0.9rem; font-weight: 700; color: #333; }
+.hero-meta-text small { display: block; font-size: 0.75rem; font-weight: 400; color: #888; }
+.hero-highlight {
+  background: linear-gradient(135deg, #fff 0%, #f8fdf9 100%);
+  border: 2px solid #2ea46a;
+  border-radius: 16px;
+  padding: 20px 32px;
+  display: inline-block;
+  margin-bottom: 32px;
+}
+.hero-highlight p {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #2ea46a;
+}
+.hero-highlight p em {
+  font-style: normal;
+  font-size: 2.2rem;
+}
+.hero-btns { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+.hero-note {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #333;
+  font-weight: 700;
+  background: rgba(255,255,255,0.8);
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+/* ============================================
+   CONCEPT
+   ============================================ */
+.concept { background: #fff; }
+.concept-box {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.concept-quote {
+  font-size: 1.6rem;
+  font-weight: 900;
+  line-height: 2;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+.concept-quote .green { color: #2ea46a; }
+.concept-body {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 2;
+}
+
+/* ============================================
+   CONTENTS (5 sections)
+   ============================================ */
+.contents { background: #f8faf9; }
+.contents-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.contents-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.contents-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+.contents-card.full-width {
+  grid-column: 1 / -1;
+}
+.card-header {
+  background: linear-gradient(135deg, #2ea46a 0%, #1b8a52 100%);
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.card-num {
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: rgba(255,255,255,0.3);
+  line-height: 1;
+}
+.card-header h3 {
+  color: #fff;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.card-body { padding: 24px; }
+.card-body p { font-size: 0.9rem; color: #555; line-height: 1.8; }
+.card-tag {
+  display: inline-block;
+  background: #e8f5ee;
+  color: #2ea46a;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+
+/* ============================================
+   JOBS (職種一覧)
+   ============================================ */
+.jobs { background: #fff; }
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.job-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: all 0.3s;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  border: 2px solid transparent;
+  position: relative;
+}
+.job-card:hover {
+  border-color: #2ea46a;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+}
+.job-card-img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  background: #e8f5ee;
+}
+.job-card-body {
+  padding: 16px 20px 20px;
+}
+.job-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 4px;
+}
+.job-category {
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 8px;
+}
+.job-company {
+  font-size: 0.75rem;
+  color: #2ea46a;
+  font-weight: 500;
+}
+.job-link-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: blur(4px);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: #2ea46a;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.job-card:hover .job-link-icon { opacity: 1; }
+
+/* ============================================
+   SCHOOLS (参加校一覧)
+   ============================================ */
+.schools { background: #f8faf9; }
+.schools-stats {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.schools-stats .num {
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: #2ea46a;
+}
+.schools-stats .unit { font-size: 1rem; font-weight: 700; color: #333; }
+.schools-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.school-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 12px 16px;
+  font-size: 0.8rem;
+  color: #444;
+  text-align: center;
+  border: 1px solid #eee;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: all 0.2s;
+}
+a.school-item:hover {
+  border-color: #2ea46a;
+  color: #2ea46a;
+  background: #f8fdf9;
+}
+.school-link-arrow {
+  font-size: 0.7rem;
+  opacity: 0;
+  transition: opacity 0.2s;
+  color: #2ea46a;
+}
+a.school-item:hover .school-link-arrow {
+  opacity: 1;
+}
+
+/* ============================================
+   BONUS (特別特典)
+   ============================================ */
+.bonus {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  color: #fff;
+}
+.bonus .section-title h2 { color: #fff; }
+.bonus .section-title .en { color: #5ec98e; }
+.bonus-inner {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+}
+.bonus-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #f5c842, #e8a610);
+  color: #1a1a1a;
+  font-size: 0.85rem;
+  font-weight: 900;
+  padding: 8px 28px;
+  border-radius: 30px;
+  margin-bottom: 24px;
+}
+.bonus-title {
+  font-size: 1.4rem;
+  font-weight: 900;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+.bonus-desc {
+  font-size: 0.9rem;
+  color: #bbb;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+.bonus-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+.bonus-photo {
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.bonus-photo img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+.bonus-photo-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  padding: 24px 16px 12px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+@media (max-width: 480px) {
+  .bonus-photos { grid-template-columns: 1fr; }
+  .bonus-photo img { height: 180px; }
+}
+.bonus-note {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+/* ============================================
+   DIAGNOSIS (診断ツール)
+   ============================================ */
+.diagnosis { background: #fff; }
+.diagnosis-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+.diag-tab {
+  padding: 16px 40px;
+  border-radius: 16px;
+  font-size: 1.05rem;
+  font-weight: 900;
+  cursor: pointer;
+  border: 3px solid #ddd;
+  background: #fff;
+  color: #888;
+  transition: all 0.3s;
+  position: relative;
+}
+.diag-tab.active {
+  border-color: #ff6b35;
+  background: linear-gradient(135deg, #ff6b35 0%, #e84518 100%);
+  color: #fff;
+  box-shadow: 0 4px 20px rgba(232,69,24,0.3);
+  animation: cta-pulse 2s ease-in-out infinite;
+}
+.diag-tab:not(.active):hover {
+  border-color: #ff6b35;
+  color: #ff6b35;
+}
+@keyframes cta-pulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(232,69,24,0.3); }
+  50% { box-shadow: 0 4px 35px rgba(232,69,24,0.6); }
+}
+.diag-panel { display: none; }
+.diag-panel.active { display: block; }
+.diag-question-area {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+.diag-progress {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+.diag-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ddd;
+  transition: background 0.3s;
+}
+.diag-dot.done { background: #2ea46a; }
+.diag-dot.current {
+  background: #2ea46a;
+  box-shadow: 0 0 0 4px rgba(46,164,106,0.2);
+}
+.diag-q-num {
+  font-family: 'Lato', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #2ea46a;
+  margin-bottom: 8px;
+}
+.diag-q-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 32px;
+  line-height: 1.6;
+}
+.diag-options { display: flex; flex-direction: column; gap: 12px; }
+.diag-option {
+  padding: 18px 28px;
+  border: 3px solid #e8e8e8;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #fff;
+  text-align: left;
+  color: #444;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.diag-option:hover {
+  border-color: #ff6b35;
+  background: #fff8f5;
+  color: #e84518;
+  box-shadow: 0 4px 16px rgba(232,69,24,0.12);
+  transform: translateX(4px);
+}
+.diag-option:active {
+  transform: translateX(4px) scale(0.98);
+}
+.diag-result {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  display: none;
+}
+.result-score {
+  font-family: 'Lato', sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: #ff6b35;
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.result-label {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin-bottom: 16px;
+}
+.result-meter {
+  width: 100%;
+  height: 12px;
+  background: #eee;
+  border-radius: 6px;
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+.result-meter-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff6b35, #e84518);
+  border-radius: 6px;
+  transition: width 0.8s ease;
+}
+.result-detail {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 2;
+  margin-bottom: 32px;
+  text-align: left;
+  background: #f8faf9;
+  padding: 24px;
+  border-radius: 12px;
+}
+.diag-result .btn-primary {
+  animation: cta-pulse 2s ease-in-out infinite;
+  font-size: 1.1rem;
+  padding: 18px 56px;
+}
+.diag-restart {
+  background: transparent;
+  color: #888;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+  margin-top: 12px;
+  text-decoration: underline;
+}
+
+/* ============================================
+   ACCESS
+   ============================================ */
+.access { background: #f8faf9; }
+.access-info {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.access-row {
+  display: flex;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+.access-label {
+  width: 120px;
+  flex-shrink: 0;
+  font-weight: 700;
+  color: #333;
+  font-size: 0.9rem;
+}
+.access-value { font-size: 0.9rem; color: #555; }
+
+/* ============================================
+   CTA
+   ============================================ */
+.cta {
+  background: linear-gradient(135deg, #ff6b35 0%, #e84518 100%);
+  padding: 64px 0;
+  text-align: center;
+  color: #fff;
+}
+.cta h2 {
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+.cta p {
+  font-size: 0.9rem;
+  opacity: 0.85;
+  margin-bottom: 32px;
+}
+.cta .btn {
+  background: #fff;
+  color: #e84518;
+  font-weight: 900;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+.cta .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+  background: #1a1a1a;
+  color: #aaa;
+  padding: 40px 0;
+  text-align: center;
+}
+.footer-logo {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.footer p { font-size: 0.75rem; line-height: 1.8; }
+.footer-copy { margin-top: 24px; font-size: 0.7rem; color: #666; }
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .hamburger { display: flex; }
+  .hero { padding: 60px 0 40px; }
+  .hero-title { font-size: 2.6rem; }
+  .hero-title-sub { font-size: 1rem; }
+  .hero-highlight p { font-size: 1.2rem; }
+  .hero-highlight p em { font-size: 1.6rem; }
+  .hero-meta { flex-direction: column; align-items: center; }
+  .section { padding: 60px 0; }
+  .section-title h2 { font-size: 1.4rem; }
+  .contents-grid { grid-template-columns: 1fr; }
+  .jobs-grid { grid-template-columns: 1fr 1fr; }
+  .job-card-img { height: 140px; }
+  .schools-list { grid-template-columns: 1fr 1fr; }
+  .access-row { flex-direction: column; gap: 4px; }
+  .access-label { width: auto; }
+  .concept-quote { font-size: 1.2rem; }
+  .diagnosis-tabs { flex-direction: column; align-items: center; }
+}
+@media (max-width: 480px) {
+  .hero-title { font-size: 2rem; }
+  .jobs-grid { grid-template-columns: 1fr; }
+  .job-card-img { height: 200px; }
+  .schools-list { grid-template-columns: 1fr; }
+  .hero-btns { flex-direction: column; align-items: center; }
+  .btn { width: 100%; max-width: 320px; }
+}
+
+/* ============================================
+   COMPARISON TABLE (新旧比較表)
+   ============================================ */
+.comparison { background: #fff; }
+.compare-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+.compare-table thead th {
+  padding: 20px 24px;
+  font-size: 1rem;
+  font-weight: 900;
+  text-align: center;
+  vertical-align: middle;
+}
+.compare-table thead th:first-child {
+  background: #f0f0f0;
+  color: #888;
+  width: 28%;
+}
+.compare-table thead th:nth-child(2) {
+  background: #f0f0f0;
+  color: #999;
+  width: 36%;
+}
+.compare-table thead th:nth-child(3) {
+  background: linear-gradient(135deg, #2ea46a, #1b8a52);
+  color: #fff;
+  width: 36%;
+}
+.compare-table tbody td {
+  padding: 18px 20px;
+  font-size: 0.88rem;
+  line-height: 1.7;
+  border-bottom: 1px solid #f0f0f0;
+  vertical-align: top;
+}
+.compare-table tbody td:first-child {
+  font-weight: 700;
+  color: #333;
+  background: #fafafa;
+  text-align: center;
+}
+.compare-table tbody td:nth-child(2) {
+  color: #888;
+  background: #fefefe;
+}
+.compare-table tbody td:nth-child(3) {
+  color: #333;
+  background: #f8fdf9;
+  font-weight: 500;
+}
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-icon-before { color: #ccc; margin-right: 6px; }
+.compare-icon-after { color: #2ea46a; margin-right: 6px; }
+.mid-cta {
+  padding: 48px 0;
+  background: linear-gradient(135deg, #f8fdf9 0%, #f0f9ff 100%);
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+.mid-cta-text {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #555;
+  margin-bottom: 20px;
+}
+.beforeafter { background: #f8faf9; }
+.ba-table thead th:nth-child(2) {
+  background: #f5f5f5;
+}
+.ba-table thead th:nth-child(3) {
+  background: linear-gradient(135deg, #2ea46a, #1b8a52);
+  color: #fff;
+}
+.ba-table .compare-icon-before {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #bbb;
+}
+.ba-table .compare-icon-after {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: rgba(255,255,255,0.7);
+}
+.compare-lead {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 2;
+}
+.compare-lead strong {
+  color: #1a1a1a;
+  background: linear-gradient(transparent 60%, rgba(46,164,106,0.15) 60%);
+  padding: 0 4px;
+}
+.compare-bottom {
+  margin-top: 40px;
+  text-align: center;
+  background: #f8fdf9;
+  border-radius: 16px;
+  padding: 32px;
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 2;
+}
+.compare-bottom strong {
+  color: #1a1a1a;
+}
+.compare-bottom .accent {
+  display: inline-block;
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* ============================================
+   BRIEFING (先生向け説明会)
+   ============================================ */
+.briefing { background: #f8faf9; }
+.briefing-box {
+  max-width: 720px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+}
+.briefing-badge {
+  display: inline-block;
+  background: #fff3e0;
+  color: #e67e22;
+  font-size: 0.8rem;
+  font-weight: 900;
+  padding: 6px 20px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+.briefing-title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+.briefing-desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 24px;
+  line-height: 1.8;
+}
+.briefing-schedule {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+.briefing-slot {
+  background: #f8faf9;
+  border: 2px solid #eee;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  transition: border-color 0.3s;
+}
+.briefing-slot:hover { border-color: #2ea46a; }
+.briefing-slot .date { font-size: 0.95rem; font-weight: 700; color: #333; }
+.briefing-slot .time { font-size: 0.8rem; color: #888; margin-top: 4px; }
+.briefing-slot .status {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 10px;
+  border-radius: 10px;
+  margin-top: 8px;
+}
+.briefing-slot .status.ended { background: #eee; color: #999; }
+.briefing-slot .status.open { background: #e8f5ee; color: #2ea46a; }
+.briefing-contents {
+  margin-bottom: 24px;
+}
+.briefing-contents h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 8px;
+}
+.briefing-contents ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+.briefing-contents li {
+  font-size: 0.85rem;
+  color: #555;
+  line-height: 1.8;
+}
+.briefing-cta { text-align: center; }
+
+@media (max-width: 768px) {
+  .compare-table { font-size: 0.8rem; }
+  .compare-table thead th { padding: 14px 12px; font-size: 0.85rem; }
+  .compare-table tbody td { padding: 14px 12px; font-size: 0.8rem; }
+  .briefing-schedule { grid-template-columns: 1fr; }
+  .briefing-box { padding: 24px; }
+}
+@media (max-width: 480px) {
+  .compare-table { display: block; overflow-x: auto; white-space: nowrap; }
+}
+
+/* ============================================
+   ANIMATIONS
+   ============================================ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<header class="header">
+  <div class="header-inner">
+    <a href="#" class="logo">Umeeets!!!<span>by USTORY</span></a>
+    <nav class="nav-links">
+      <a href="#compare">比較表</a>
+      <a href="#contents">コンテンツ</a>
+      <a href="#jobs">職種一覧</a>
+      <a href="#briefing">説明会</a>
+      <a href="#diagnosis">診断ツール</a>
+      <a href="#access">開催情報</a>
+      <a href="#apply" class="btn btn-primary nav-cta">申し込む</a>
+    </nav>
+    <div class="hamburger" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#compare" onclick="closeMobileNav()">比較表</a>
+    <a href="#contents" onclick="closeMobileNav()">コンテンツ</a>
+    <a href="#jobs" onclick="closeMobileNav()">職種一覧</a>
+    <a href="#schools" onclick="closeMobileNav()">参加校</a>
+    <a href="#briefing" onclick="closeMobileNav()">先生向け説明会</a>
+    <a href="#diagnosis" onclick="closeMobileNav()">診断ツール</a>
+    <a href="#access" onclick="closeMobileNav()">開催情報</a>
+    <a href="#apply" onclick="closeMobileNav()" style="color:#2ea46a;font-weight:700;border:none;">申し込む</a>
+  </div>
+</header>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="top">
+  <div class="hero-inner">
+    <div class="hero-tag">2026.6.10 Wed ＠プレミストドーム</div>
+    <p class="hero-catch">「どうせ」をひっくり返せ！ ―社会のリアルを体感せよ―</p>
+    <h1 class="hero-title">Umeeets!!!</h1>
+    <p class="hero-title-sub">職業体験型イベント</p>
+
+    <div class="hero-meta">
+      <div class="hero-meta-item">
+        <div class="hero-meta-text">2026年6月10日（水）<small>10:00〜18:00（予定）</small></div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-text">プレミストドーム<small>札幌市</small></div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="hero-meta-text">保護者同伴OK<small>ご家族での参加も歓迎</small></div>
+      </div>
+    </div>
+
+    <div class="hero-highlight">
+      <p><em>30</em>職種以上を<em>1</em>日で体験！</p>
+    </div>
+
+    <div class="hero-btns">
+      <a href="#apply" class="btn btn-primary">参加を申し込む</a>
+      <a href="#diagnosis" class="btn btn-diag-hero">参加すべき？診断する</a>
+    </div>
+    <p class="hero-note">※30名以上の学校単位参加はバス送迎あり（先着順）</p>
+  </div>
+</section>
+
+<!-- ========== CONCEPT ========== -->
+<section class="section concept" id="concept">
+  <div class="container">
+    <div class="section-title fade-in">
+      <div class="en">Concept</div>
+      <h2>イベントコンセプト</h2>
+    </div>
+    <div class="concept-box fade-in">
+      <p class="concept-quote">
+        教科書にもネットにも載っていない、<br>
+        <span class="green">予想外のリアル</span>をたくさん体験して<br>
+        あなたの中にある<br>
+        「<span class="green">どうせ</span>〜はこうだろうな…」を<br>
+        できるだけ<span class="green">ひっくり返す</span>1日に！
+      </p>
+      <p class="concept-body">
+        高校生が実社会と直接出会うことで、<br>
+        仕事や社会、自分自身に対する先入観や思い込みを見直し、<br>
+        進路を前向きに考えるきっかけをつくる。それがUmeeets!!!です。<br>
+        30職種以上の企業・団体が参加し、求人票だけでは分からない仕事のリアルに触れられます。<br>
+        「自分もやってみたい」「自分にもできるかもしれない」<br>
+        ―そう感じる1日を、あなたに届けます。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== COMPARISON ========== -->
+<section class="section comparison" id="compare">
+  <div class="container">
+    <div class="section-title fade-in">
+      <div class="en">What's the Difference?</div>
+      <h2>「企業説明会」と「Umeeets!!!」は<br>まったく別のイベントです</h2>
+      <p class="subtitle">「企業説明会に参加させてるから大丈夫」と思っていませんか？<br>実は、目的もゴールもまったく異なります。</p>
+    </div>
+
+    <div class="compare-lead fade-in">
+      <p>企業説明会は<strong>「企業が自社を知ってもらう場」</strong>。<br>
+      Umeeets!!!は<strong>「生徒が自分自身を知る場」</strong>です。</p>
+    </div>
+
+    <div class="fade-in" style="overflow-x:auto;">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th><span class="compare-icon-before">△</span>企業説明会</th>
+            <th><span class="compare-icon-after">◎</span>Umeeets!!!（職業体験イベント）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>目的</td>
+            <td>企業が自社の魅力を伝え、<strong>採用につなげる</strong>ための場</td>
+            <td>生徒が仕事を体験し、<strong>自分の興味・適性を発見する</strong>ための場</td>
+          </tr>
+          <tr>
+            <td>主役</td>
+            <td><strong>企業側</strong>が主役。企業のペースで情報を伝える</td>
+            <td><strong>生徒</strong>が主役。自分のペースで自由に回って体験する</td>
+          </tr>
+          <tr>
+            <td>生徒の<br>行動</td>
+            <td>座って聞く（受動的）。<br>スライドや資料を見て情報を受け取る</td>
+            <td>手を動かす・体を動かす（能動的）。<br>寿司を握る、ドローンを飛ばす、足場を組むなど実体験</td>
+          </tr>
+          <tr>
+            <td>触れられる<br>職種の数</td>
+            <td>参加企業の業種のみ。<br>興味がある企業ブースだけ回りがち</td>
+            <td>1日で<strong>30職種以上</strong>。<br>「知らなかった仕事」に偶然出会えるから視野が広がる</td>
+          </tr>
+          <tr>
+            <td>得られる<br>情報</td>
+            <td>企業概要・待遇・福利厚生など<br><strong>求人票の延長線上</strong>の情報</td>
+            <td>「この仕事、思ってたのと違う！」という<br><strong>求人票には載らないリアルな感覚</strong></td>
+          </tr>
+          <tr>
+            <td>社会人との<br>関わり</td>
+            <td>質疑応答で少し話す程度。<br>本音は出にくい</td>
+            <td>ホンネトークブースで<strong>給料・ギャップ・辛いことまでぶっちゃけ</strong>トーク</td>
+          </tr>
+          <tr>
+            <td>終わった後<br>に残るもの</td>
+            <td>パンフレットと<br>「なんとなく分かった」という印象</td>
+            <td>ワークブックに記録した体験＋自己分析結果。<br><strong>志望動機・自己PRのネタ</strong>がそのまま手元に</td>
+          </tr>
+          <tr>
+            <td>進路が<br>決まっていない<br>生徒への効果</td>
+            <td>興味のある企業がないと<strong>「自分には関係ない」</strong>と感じやすい</td>
+            <td>体験から入るので興味がなくてもOK。<br><strong>「意外と面白い！」が見つかる</strong>きっかけになる</td>
+          </tr>
+          <tr>
+            <td>先生の<br>準備負担</td>
+            <td>事前に企業情報を調べ、<br>生徒に事前学習をさせる必要あり</td>
+            <td>申込だけでOK。30名以上ならバス送迎あり。<br>プログラムはすべてUSTORYが運営</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="compare-bottom fade-in">
+      <p>企業説明会は「どの会社に入るか」を考える場。<br>
+      Umeeets!!!は、その<strong>手前</strong>にある<strong>「自分は何に心が動くのか」を見つける場</strong>です。<br>
+      <span class="accent">両方に参加することで、生徒の進路選択はもっと納得感のあるものになります。</span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BEFORE / AFTER ========== -->
+<section class="section beforeafter" id="beforeafter">
+  <div class="container">
+    <div class="section-title fade-in">
+      <div class="en">Before / After</div>
+      <h2>Umeeets!!!に参加すると、何が変わる？</h2>
+      <p class="subtitle">従来の進路指導と比べて、生徒の「その後」がこう変わります</p>
+    </div>
+
+    <div class="fade-in" style="overflow-x:auto;">
+      <table class="compare-table ba-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th><span class="compare-icon-before">Before</span><br>従来の進路指導だけ</th>
+            <th><span class="compare-icon-after">After</span><br>Umeeets!!!に参加すると</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>職業を知る<br>方法</td>
+            <td>求人票やパンフレットなど紙の情報が中心。仕事のイメージが湧きにくい</td>
+            <td>30職種以上を実際に「手を動かして」体験。五感でリアルを掴める</td>
+          </tr>
+          <tr>
+            <td>社会人との<br>接点</td>
+            <td>講演会形式で一方通行になりがち。本音が聞けない</td>
+            <td>ホンネトークブースで双方向の対話。給料・ギャップ・リアルな生活まで聞ける</td>
+          </tr>
+          <tr>
+            <td>体験できる<br>職種の数</td>
+            <td>職場体験は1〜2社。限られた業種のみ</td>
+            <td>1日で30職種以上を体験。「知らなかった仕事」との偶然の出会いが生まれる</td>
+          </tr>
+          <tr>
+            <td>自己理解・<br>言語化</td>
+            <td>体験後の振り返りが不十分。「楽しかった」で終わりがち</td>
+            <td>オリジナルワークブック＋自己分析ワークショップで体験を言語化。志望動機・自己PRに直結</td>
+          </tr>
+          <tr>
+            <td>志望動機<br>の質</td>
+            <td>ネットの例文を参考にした似たような内容になりがち</td>
+            <td>実体験ベースの具体的なエピソードが書ける。面接でも自信をもって話せる</td>
+          </tr>
+          <tr>
+            <td>先生の<br>準備負担</td>
+            <td>企業との調整・引率・事前学習の準備など負担が大きい</td>
+            <td>申込だけでOK。30名以上ならバス送迎あり。プログラムはすべてUSTORYが運営</td>
+          </tr>
+          <tr>
+            <td>生徒の<br>モチベーション</td>
+            <td>「どうせつまらない」と消極的な参加になりやすい</td>
+            <td>プレミストドームという非日常空間＋体験型で「自分もやってみたい」が自然に湧く</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MID CTA ========== -->
+<section class="mid-cta">
+  <div class="container" style="text-align:center;">
+    <p class="mid-cta-text">ここまで読んで気になったら</p>
+    <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+      <a href="#apply" class="btn btn-primary">参加を申し込む</a>
+      <a href="#diagnosis" class="btn btn-diag-hero">参加すべき？診断する</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CONTENTS ========== -->
+<section class="section contents" id="contents">
+  <div class="container">
+    <div class="section-title fade-in">
+      <div class="en">Contents</div>
+      <h2>イベントコンテンツ</h2>
+      <p class="subtitle">5つのプログラムであなたの「知らない」をひっくり返す</p>
+    </div>
+    <div class="contents-grid">
+      <div class="contents-card fade-in">
+        <div class="card-header">
+          <div class="card-num">01</div>
+          <h3>お仕事体験（30職種以上）</h3>
+        </div>
+        <div class="card-body">
+          <div class="card-tag">何が楽しい？を体感する！</div>
+          <p>1日で30職種以上の体験が可能！時間の許す限りたくさん体験をして、自分の中にある仕事へのイメージをひっくり返してください！</p>
+        </div>
+      </div>
+      <div class="contents-card fade-in">
+        <div class="card-header">
+          <div class="card-num">02</div>
+          <h3>社会人のホンネトークブース</h3>
+        </div>
+        <div class="card-body">
+          <div class="card-tag">社会人のリアルを深堀り！</div>
+          <p>入社してからギャップはあった？辛いことは？実際いくらもらえるの？リアルな生活は？など、皆さんが気になることを社会人がぶっちゃけます！</p>
+        </div>
+      </div>
+      <div class="contents-card fade-in">
+        <div class="card-header">
+          <div class="card-num">03</div>
+          <h3>最短で先輩から褒められるようになった理由</h3>
+        </div>
+        <div class="card-body">
+          <div class="card-tag">経験0→評価されるまでのプロセス</div>
+          <p>まったく何もできなかったときから、評価されるまでをシェア！生徒→社会人になるまでをリアルにお届けします。</p>
+        </div>
+      </div>
+      <div class="contents-card fade-in">
+        <div class="card-header">
+          <div class="card-num">04</div>
+          <h3>課題研究＆探究発表コーナー</h3>
+        </div>
+        <div class="card-body">
+          <div class="card-tag">他校の課題研究をみて学ぶ！</div>
+          <p>みんなはどんな課題研究をしてる？？他校の例をみて学んでください！課題研究や探究発表に役立つヒントになります！</p>
+        </div>
+      </div>
+      <div class="contents-card full-width fade-in">
+        <div class="card-header">
+          <div class="card-num">05</div>
+          <h3>志望動機＆自己分析ワークショップ</h3>
+        </div>
+        <div class="card-body">
+          <div class="card-tag">感想の共通点からあなたの強み発掘！</div>
+          <p>イベントでブースを回ったらオリジナルワークブックに感想を記入。最後に自己分析ワークショップを訪ねて、今日のイベントで得たことを言語化することで志望動機＆自己PRのヒントになります！自身の興味・関心や将来について振り返る時間です。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== JOBS ========== -->
+<section class="section jobs" id="jobs">
+  <div class="container">
+    <div class="section-title fade-in">
+      <div class="en">Job Experience</div>
+      <h2>体験できる職種一覧</h2>
+      <p class="subtitle">実際に手を動かして「仕事のリアル」を感じよう</p>
+    </div>
+    <div class="jobs-grid" id="jobsGrid">
+      <!-- JS で自動生成 -->
+    </div>
+  </div>
+</section>
+
+<!-- ========== SCHOOLS ========== -->
+<section class="section schools" id="schools">
+  <div class="container">
+    <div class="section-title fade-in">
+      <div class="en">Participating Schools</div>
+      <h2>参加校一覧（五十音順）</h2>
+    </div>
+    <div class="schools-stats fade-in">
+      <span class="num" id="schoolCount">0</span><span class="unit"> 校が参加予定</span>
+    </div>
+    <div class="schools-list" id="schoolsList">
+      <!-- JS で自動生成 -->
+    </div>
+  </div>
+</section>
+
+<!-- ========== MID CTA 2 ========== -->
+<section class="mid-cta">
+  <div class="container" style="text-align:center;">
+    <p class="mid-cta-text">これだけの学校が参加を決めています</p>
+    <div style="display:flex;justify-content:center;gap:16px;flex-wrap:wrap;">
+      <a href="#apply" class="btn btn-primary">参加を申し込む</a>
+      <a href="#diagnosis" class="btn btn-diag-hero">参加すべき？診断する</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BONUS ========== -->
+<section class="section bonus" id="bonus">
+  <div class="container">
+    <div class="section-title fade-in">
+      <div class="en">Special Bonus</div>
+      <h2>プレミストドーム開催 特別来場特典</h2>
+    </div>
+    <div class="bonus-inner fade-in">
+      <div class="bonus-badge">先着順 特別特典</div>
+      <p class="bonus-title">コンサドーレ札幌<br>ロッカールーム ／ ブルペン見学</p>
+
+      <div class="bonus-photos">
+        <div class="bonus-photo">
+          <img src="bonus_img_2.jpeg" alt="コンサドーレ札幌 ロッカールーム" loading="lazy">
+          <div class="bonus-photo-label">ロッカールーム</div>
+        </div>
+        <div class="bonus-photo">
+          <img src="bonus_img_0.jpeg" alt="ブルペン" loading="lazy">
+          <div class="bonus-photo-label">ブルペン</div>
+        </div>
+      </div>
+
+      <p class="bonus-desc">
+        職業イベントと合わせて、プレミストドーム内の設備もご見学いただけます。<br>
+        普段は入ることのできないロッカールームやブルペンを間近で体感してください。
+      </p>
+      <p class="bonus-note">※先着順。施設見学のみの参加は不可。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BRIEFING (先生向け説明会) ========== -->
+<section class="section briefing" id="briefing">
+  <div class="container">
+    <div class="section-title fade-in">
+      <div class="en">For Teachers</div>
+      <h2>先生向けオンライン説明会</h2>
+      <p class="subtitle">イベントの詳細や今年の高卒就職動向をご説明します</p>
+    </div>
+    <div class="briefing-box fade-in">
+      <div class="briefing-badge">先生向け / 参加無料・所要約30分</div>
+      <p class="briefing-title">Umeeets!!!事前説明会（オンライン）</p>
+      <p class="briefing-desc">
+        進路指導・キャリア教育の一環として参加をご検討いただくにあたり、<br>
+        イベントの詳細やワークブックの内容をご説明するオンライン説明会を開催いたします。
+      </p>
+
+      <div class="briefing-schedule">
+        <div class="briefing-slot">
+          <div class="date">3月23日（月）</div>
+          <div class="time">16:00〜</div>
+          <span class="status ended">終了</span>
+        </div>
+        <div class="briefing-slot">
+          <div class="date">3月24日（火）</div>
+          <div class="time">16:00〜</div>
+          <span class="status ended">終了</span>
+        </div>
+        <div class="briefing-slot">
+          <div class="date">3月25日（水）</div>
+          <div class="time">13:30〜</div>
+          <span class="status ended">終了</span>
+        </div>
+        <div class="briefing-slot">
+          <div class="date">3月26日（木）</div>
+          <div class="time">13:30〜</div>
+          <span class="status open">受付中</span>
+        </div>
+      </div>
+
+      <div class="briefing-contents">
+        <h4>説明会の内容（予定）</h4>
+        <ul>
+          <li>Umeeets!!!イベント概要</li>
+          <li>今年の高卒就職の動向</li>
+          <li>自己PRにもつながるイベントオリジナルワークブックの内容</li>
+          <li>質疑応答</li>
+        </ul>
+      </div>
+
+      <div class="briefing-cta">
+        <a href="https://forms.gle/zrsGQCzJYuo4HTFb7" target="_blank" class="btn btn-primary">説明会に申し込む（1分で完了）</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DIAGNOSIS ========== -->
+<section class="section diagnosis" id="diagnosis">
+  <div class="container">
+    <div class="section-title fade-in">
+      <div class="en">Diagnosis</div>
+      <h2>Umeeets!!!参加診断</h2>
+      <p class="subtitle">あなた（もしくは生徒さん）にUmeeets!!!が必要かチェック！</p>
+    </div>
+
+    <div class="diagnosis-tabs fade-in">
+      <button class="diag-tab active" onclick="switchDiag('student')">高校生向け診断</button>
+      <button class="diag-tab" onclick="switchDiag('teacher')">先生向け診断</button>
+    </div>
+
+    <!-- 高校生向け -->
+    <div class="diag-panel active" id="panel-student">
+      <div class="diag-question-area" id="qa-student">
+        <div class="diag-progress" id="progress-student"></div>
+        <div class="diag-q-num" id="qnum-student"></div>
+        <div class="diag-q-text" id="qtext-student"></div>
+        <div class="diag-options" id="opts-student"></div>
+      </div>
+      <div class="diag-result" id="result-student">
+        <div class="result-score" id="score-student"></div>
+        <div class="result-label" id="label-student"></div>
+        <div class="result-meter"><div class="result-meter-fill" id="meter-student"></div></div>
+        <div class="result-detail" id="detail-student"></div>
+        <a href="#apply" class="btn btn-primary">参加を申し込む</a>
+        <br><button class="diag-restart" onclick="restartDiag('student')">もう一度診断する</button>
+      </div>
+    </div>
+
+    <!-- 先生向け -->
+    <div class="diag-panel" id="panel-teacher">
+      <div class="diag-question-area" id="qa-teacher">
+        <div class="diag-progress" id="progress-teacher"></div>
+        <div class="diag-q-num" id="qnum-teacher"></div>
+        <div class="diag-q-text" id="qtext-teacher"></div>
+        <div class="diag-options" id="opts-teacher"></div>
+      </div>
+      <div class="diag-result" id="result-teacher">
+        <div class="result-score" id="score-teacher"></div>
+        <div class="result-label" id="label-teacher"></div>
+        <div class="result-meter"><div class="result-meter-fill" id="meter-teacher"></div></div>
+        <div class="result-detail" id="detail-teacher"></div>
+        <a href="#apply" class="btn btn-primary">参加を申し込む</a>
+        <br><button class="diag-restart" onclick="restartDiag('teacher')">もう一度診断する</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ACCESS ========== -->
+<section class="section access" id="access">
+  <div class="container">
+    <div class="section-title fade-in">
+      <div class="en">Event Info</div>
+      <h2>開催情報</h2>
+    </div>
+    <div class="access-info fade-in">
+      <div class="access-row">
+        <div class="access-label">イベント名</div>
+        <div class="access-value">職業体験型イベント Umeeets!!!（ユーミーツ）</div>
+      </div>
+      <div class="access-row">
+        <div class="access-label">日時</div>
+        <div class="access-value">2026年6月10日（水）10:00〜18:00（予定）</div>
+      </div>
+      <div class="access-row">
+        <div class="access-label">会場</div>
+        <div class="access-value">プレミストドーム（札幌市）</div>
+      </div>
+      <div class="access-row">
+        <div class="access-label">対象</div>
+        <div class="access-value">高校生（保護者同伴参加OK）</div>
+      </div>
+      <div class="access-row">
+        <div class="access-label">参加費</div>
+        <div class="access-value">無料</div>
+      </div>
+      <div class="access-row">
+        <div class="access-label">バス送迎</div>
+        <div class="access-value">30名以上の学校単位参加の場合、学校⇔会場間のバス利用可能（先着順）</div>
+      </div>
+      <div class="access-row">
+        <div class="access-label">主催</div>
+        <div class="access-value">株式会社USTORY<br>〒064-0810 北海道札幌市中央区南10条西1丁目1-65<br>11.CONCEPT SPERARE BLD 6F</div>
+      </div>
+      <div class="access-row">
+        <div class="access-label">お問い合わせ</div>
+        <div class="access-value">担当：渡部（わたなべ）<br>TEL: 080-7284-8883<br>Mail: y.watanabe@ustory.co.jp</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="cta" id="apply">
+  <div class="container">
+    <h2>Umeeets!!!に参加しよう</h2>
+    <p>「どうせ」をひっくり返す1日が、あなたの未来を変える。</p>
+    <a href="https://forms.gle/XXXXXXXX" target="_blank" class="btn" id="applyBtn">Googleフォームで申し込む</a>
+    <p style="margin-top:16px;font-size:0.8rem;opacity:0.7;">※学校単位でのお申し込みも個人でのお申し込みも受付中</p>
+  </div>
+</section>
+
+<!-- ========== FOOTER ========== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-logo">Umeeets!!! by USTORY</div>
+    <p>株式会社USTORY<br>〒064-0810 北海道札幌市中央区南10条西1丁目1-65 11.CONCEPT SPERARE BLD 6F</p>
+    <div class="footer-copy">&copy; 2026 USTORY Inc. All rights reserved.</div>
+  </div>
+</footer>
+
+<!-- ========== JAVASCRIPT ========== -->
+<script>
+/* ============================================
+   DATA: ここを編集するだけで一覧が更新されます
+   ============================================ */
+
+// ▼▼▼ 職種一覧データ（更新はここだけ！） ▼▼▼
+// image: 写真URL（企業の実写真に差し替えてください）
+// url:   企業サイトURL（クリックで遷移します）
+// company: 企業名（任意。空文字なら非表示）
+const JOBS_DATA = [
+  {
+    name: "寿司握り体験",
+    category: "飲食",
+    company: "",
+    image: "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=600&h=400&fit=crop",
+    url: ""
+  },
+  {
+    name: "トラック積載＆乗車",
+    category: "運輸",
+    company: "",
+    image: "https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&h=400&fit=crop",
+    url: ""
+  },
+  {
+    name: "救命活動＆モールス信号・装甲車展示",
+    category: "公共",
+    company: "",
+    image: "救命活動＆モールス信号・装甲車展示.jpeg",
+    url: ""
+  },
+  {
+    name: "左官体験",
+    category: "建設",
+    company: "",
+    image: "左官体験.jpeg",
+    url: ""
+  },
+  {
+    name: "大工体験",
+    category: "建設",
+    company: "",
+    image: "大工体験.jpeg",
+    url: ""
+  },
+  {
+    name: "ドローン操作体験",
+    category: "テクノロジー",
+    company: "",
+    image: "https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=600&h=400&fit=crop",
+    url: ""
+  },
+  {
+    name: "交通誘導体験",
+    category: "警備",
+    company: "",
+    image: "交通誘導.jpeg",
+    url: ""
+  },
+  {
+    name: "引越作業体験",
+    category: "サービス",
+    company: "",
+    image: "引越作業.jpeg",
+    url: ""
+  },
+  {
+    name: "足場体験",
+    category: "建設",
+    company: "",
+    image: "足場.jpeg",
+    url: ""
+  },
+];
+// ▲▲▲ 職種を追加・変更する場合は上記配列を編集 ▲▲▲
+// ★ image を企業提供の写真URLに差し替え
+// ★ url に企業サイトURLを入れるとカードがリンクになります
+// ★ company に企業名を入れるとカード上に表示されます
+
+// ▼▼▼ 参加校一覧データ（更新はここだけ！） ▼▼▼
+// name: 学校名, url: 学校公式サイトURL
+const SCHOOLS_DATA = [
+  { name: "飛鳥未来きずな高等学校", url: "https://www.sanko.ac.jp/asuka/kizuna/" },
+  { name: "飛鳥未来高等学校 札幌キャンパス", url: "https://www.sanko.ac.jp/asuka/asukamirai/sapporo/" },
+  { name: "小樽明峰高等学校", url: "https://www.meihou.ed.jp/" },
+  { name: "鹿島朝日高等学校 エコール札幌", url: "https://www.kg-school.net/asahi/" },
+  { name: "栗山高等学校", url: "https://www.kuriyama.hokkaido-c.ed.jp/" },
+  { name: "札幌静修高等学校", url: "https://www.sapporoseishu.ed.jp/" },
+  { name: "三笠高等学校", url: "https://www.city.mikasa.hokkaido.jp/highschool/" },
+  { name: "星槎国際高等学校 北広島学習センター", url: "https://seisa.ed.jp/kitahiro/" },
+  { name: "星槎国際高等学校 札幌北学習センター", url: "https://seisa.ed.jp/sappkita/" },
+  { name: "星槎国際高等学校 本部校", url: "https://seisa.ed.jp/sapporo/" },
+  { name: "第一学院高等学校 札幌キャンパス", url: "https://www.daiichigakuin.ed.jp/campus/sapporo/" },
+  { name: "トライ式高等学院 札幌キャンパス", url: "https://www.try-gakuin.com/support_kyoten/hokkaido/sapporo/" },
+  { name: "トライ式高等学院 新札幌キャンパス", url: "https://www.try-gakuin.com/support_kyoten/hokkaido/shinsapporo/" },
+  { name: "トライ式高等学校 旭川キャンパス", url: "https://www.try-gakuin.com/support_kyoten/hokkaido/asahikawa/" },
+  { name: "ヒューマンキャンパスのぞみ高等学校 札幌大通学習センター", url: "https://www.hchs.ed.jp/campus/sapporo_odori/" },
+  { name: "北海道有朋高等学校", url: "https://www.yuho.hokkaido-c.ed.jp/" },
+  { name: "北海道江別高等学校 定時制課程", url: "https://www.ebetsu.hokkaido-c.ed.jp/" },
+  { name: "北海道小樽水産高等学校", url: "https://www.otarusuisan.hokkaido-c.ed.jp/" },
+  { name: "北海道小樽未来創造高等学校", url: "http://www.miraisouzou.hokkaido-c.ed.jp/" },
+  { name: "北海道教育学園三和高等学校", url: "https://www.sapporo-jg.com/sanwa/" },
+  { name: "北海道北広島西高等学校", url: "https://www.kitahiroshimanishi.hokkaido-c.ed.jp/" },
+  { name: "北海道札幌丘珠高等学校", url: "https://www.sapporookadama.hokkaido-c.ed.jp/" },
+  { name: "北海道札幌北高等学校 定時制課程", url: "https://www.sapporokita.hokkaido-c.ed.jp/" },
+  { name: "北海道札幌真栄高等学校", url: "https://www.sapporoshinei.hokkaido-c.ed.jp/" },
+  { name: "北海道札幌月寒高等学校 定時制課程", url: "https://www.sapporotsukisamu.hokkaido-c.ed.jp/" },
+  { name: "北海道当別高等学校", url: "https://www.toubetsu.hokkaido-c.ed.jp/" },
+  { name: "北照高等学校", url: "https://www.hokusho.ed.jp/" },
+];
+// ▲▲▲ 学校を追加・変更する場合は上記配列を編集 ▲▲▲
+
+// ▼▼▼ Googleフォーム URL（ここを差し替え） ▼▼▼
+const APPLY_FORM_URL = "https://forms.gle/XXXXXXXX";
+// ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
+
+/* ============================================
+   RENDER: 職種一覧
+   ============================================ */
+function renderJobs() {
+  const grid = document.getElementById('jobsGrid');
+  grid.innerHTML = JOBS_DATA.map(job => {
+    const tag = job.url ? 'a' : 'div';
+    const href = job.url ? ` href="${job.url}" target="_blank" rel="noopener"` : '';
+    const linkIcon = job.url ? '<div class="job-link-icon">&#x2197;</div>' : '';
+    const companyHtml = job.company ? `<div class="job-company">${job.company}</div>` : '';
+    return `
+      <${tag} class="job-card fade-in"${href}>
+        ${linkIcon}
+        <img class="job-card-img" src="${job.image}" alt="${job.name}" loading="lazy">
+        <div class="job-card-body">
+          <div class="job-name">${job.name}</div>
+          <div class="job-category">${job.category}</div>
+          ${companyHtml}
+        </div>
+      </${tag}>
+    `;
+  }).join('');
+}
+
+/* ============================================
+   RENDER: 参加校一覧
+   ============================================ */
+function renderSchools() {
+  const list = document.getElementById('schoolsList');
+  document.getElementById('schoolCount').textContent = SCHOOLS_DATA.length;
+  list.innerHTML = SCHOOLS_DATA.map(s => {
+    if (s.url) {
+      return `<a class="school-item fade-in" href="${s.url}" target="_blank" rel="noopener">${s.name}<span class="school-link-arrow">&#x2197;</span></a>`;
+    }
+    return `<div class="school-item fade-in">${s.name}</div>`;
+  }).join('');
+}
+
+/* ============================================
+   APPLY BUTTON URL
+   ============================================ */
+function setApplyUrl() {
+  document.getElementById('applyBtn').href = APPLY_FORM_URL;
+}
+
+/* ============================================
+   DIAGNOSIS TOOL
+   ============================================ */
+
+// 高校生向け質問
+const STUDENT_QUESTIONS = [
+  {
+    q: "将来やりたい仕事は決まっている？",
+    opts: [
+      { text: "まったく決まっていない", score: 3 },
+      { text: "なんとなくはあるけど自信がない", score: 2 },
+      { text: "だいたい決まっている", score: 1 },
+    ]
+  },
+  {
+    q: "「仕事」と聞くとどんなイメージ？",
+    opts: [
+      { text: "正直、大変そう・つまらなそう", score: 3 },
+      { text: "よくわからない", score: 2 },
+      { text: "楽しそうな仕事もあると思う", score: 1 },
+    ]
+  },
+  {
+    q: "実際に仕事を「体験」したことはある？",
+    opts: [
+      { text: "一度もない", score: 3 },
+      { text: "学校の職場体験で1〜2回", score: 2 },
+      { text: "何度か経験がある", score: 1 },
+    ]
+  },
+  {
+    q: "志望動機や自己PRに書けることがある？",
+    opts: [
+      { text: "何も思いつかない…", score: 3 },
+      { text: "少しはあるけど不安", score: 2 },
+      { text: "しっかり書ける！", score: 1 },
+    ]
+  },
+  {
+    q: "社会人に直接話を聞いたことはある？",
+    opts: [
+      { text: "家族以外はない", score: 3 },
+      { text: "少しだけある", score: 2 },
+      { text: "いろいろな人に聞いている", score: 1 },
+    ]
+  },
+];
+
+// 先生向け質問
+const TEACHER_QUESTIONS = [
+  {
+    q: "生徒のキャリア意識について、現状どう感じていますか？",
+    opts: [
+      { text: "将来について考えている生徒が少ない", score: 3 },
+      { text: "一部は考えているが全体的には不十分", score: 2 },
+      { text: "多くの生徒が主体的に考えている", score: 1 },
+    ]
+  },
+  {
+    q: "生徒が実際の仕事に触れる機会は十分ですか？",
+    opts: [
+      { text: "ほとんど機会がない", score: 3 },
+      { text: "年に1回程度の職場体験のみ", score: 2 },
+      { text: "複数回の機会を設けている", score: 1 },
+    ]
+  },
+  {
+    q: "生徒の志望動機・自己PRの質はいかがですか？",
+    opts: [
+      { text: "具体的な内容が書けない生徒が多い", score: 3 },
+      { text: "テンプレ的な内容になりがち", score: 2 },
+      { text: "個性的で具体的な内容が多い", score: 1 },
+    ]
+  },
+  {
+    q: "キャリア教育にかけられるリソース（時間・人員）は？",
+    opts: [
+      { text: "かなり限られている", score: 3 },
+      { text: "ある程度はあるが外部連携が少ない", score: 2 },
+      { text: "充実している", score: 1 },
+    ]
+  },
+  {
+    q: "生徒の「働くこと」へのイメージは？",
+    opts: [
+      { text: "ネガティブなイメージが強い", score: 3 },
+      { text: "漠然としている", score: 2 },
+      { text: "比較的ポジティブ", score: 1 },
+    ]
+  },
+];
+
+const diagState = {
+  student: { idx: 0, total: 0 },
+  teacher: { idx: 0, total: 0 },
+};
+
+function getQuestions(type) {
+  return type === 'student' ? STUDENT_QUESTIONS : TEACHER_QUESTIONS;
+}
+
+function renderDiag(type) {
+  const qs = getQuestions(type);
+  const st = diagState[type];
+  const prog = document.getElementById(`progress-${type}`);
+  const qnum = document.getElementById(`qnum-${type}`);
+  const qtext = document.getElementById(`qtext-${type}`);
+  const opts = document.getElementById(`opts-${type}`);
+
+  // progress dots
+  prog.innerHTML = qs.map((_, i) => {
+    let cls = 'diag-dot';
+    if (i < st.idx) cls += ' done';
+    else if (i === st.idx) cls += ' current';
+    return `<div class="${cls}"></div>`;
+  }).join('');
+
+  if (st.idx >= qs.length) {
+    showResult(type);
+    return;
+  }
+
+  const q = qs[st.idx];
+  qnum.textContent = `Q${st.idx + 1} / ${qs.length}`;
+  qtext.textContent = q.q;
+  opts.innerHTML = q.opts.map((o, i) => `
+    <div class="diag-option" onclick="answerDiag('${type}', ${o.score})">${o.text}</div>
+  `).join('');
+}
+
+function answerDiag(type, score) {
+  diagState[type].total += score;
+  diagState[type].idx++;
+  renderDiag(type);
+}
+
+function showResult(type) {
+  const qa = document.getElementById(`qa-${type}`);
+  const res = document.getElementById(`result-${type}`);
+  qa.style.display = 'none';
+  res.style.display = 'block';
+
+  const qs = getQuestions(type);
+  const maxScore = qs.length * 3;
+  const total = diagState[type].total;
+  const pct = Math.round((total / maxScore) * 100);
+
+  document.getElementById(`score-${type}`).textContent = pct + '%';
+  document.getElementById(`meter-${type}`).style.width = pct + '%';
+
+  let label, detail;
+  if (type === 'student') {
+    if (pct >= 75) {
+      label = 'Umeeets!!!はあなたにピッタリ！';
+      detail = '将来について考えるきっかけが少ない今こそ、Umeeets!!!の出番です。約30職種を実際に体験することで「どうせ〜だろう」という思い込みがひっくり返り、自分でも気づかなかった興味や強みが見つかるはず。志望動機や自己PRのネタにもなります。ぜひ参加して、未来のヒントを掴んでください！';
+    } else if (pct >= 45) {
+      label = '参加するとさらに視野が広がる！';
+      detail = 'ある程度は将来のことを考えている一方、まだ実体験が足りていないかもしれません。Umeeets!!!で実際に手を動かし、社会人のリアルな声を聞くことで、自分の選択肢がもっと広がります。志望動機の具体性もアップするはず！';
+    } else {
+      label = '意識が高い！でも参加する価値あり';
+      detail = '将来の方向性がある程度見えているのは素晴らしいです。それでも、30職種を1日で体験できる機会はなかなかありません。「決めている」からこそ、他の職種を知ることで自分の選択に自信が持てたり、新たな発見があるかもしれません。';
+    }
+  } else {
+    if (pct >= 75) {
+      label = '生徒さんにぜひ体験させてあげてください！';
+      detail = 'キャリア意識の醸成や職業体験の機会がまだ十分でないとのこと。Umeeets!!!は1日で約30職種を体験でき、志望動機ワークショップまでセットになっています。先生方のキャリア教育の負担を大幅に軽減しながら、生徒に質の高い体験を提供できます。30名以上ならバス送迎も利用可能です。';
+    } else if (pct >= 45) {
+      label = '生徒さんの体験をさらに充実させるチャンス！';
+      detail = 'ある程度のキャリア教育を実施されている中で、外部イベントを活用することでさらに体験の幅が広がります。社会人のリアルなトークや他校の課題研究発表など、学内だけでは提供しにくいコンテンツが揃っています。';
+    } else {
+      label = 'すでに充実！プラスαの体験として活用を';
+      detail = 'キャリア教育が充実しているのは素晴らしいです。Umeeets!!!はそこにさらにプラスαの体験を加えられます。特にプレミストドームという特別な会場での開催は、生徒のモチベーション向上にもつながります。';
+    }
+  }
+  document.getElementById(`label-${type}`).textContent = label;
+  document.getElementById(`detail-${type}`).textContent = detail;
+}
+
+function restartDiag(type) {
+  diagState[type] = { idx: 0, total: 0 };
+  document.getElementById(`qa-${type}`).style.display = 'block';
+  document.getElementById(`result-${type}`).style.display = 'none';
+  renderDiag(type);
+}
+
+function switchDiag(type) {
+  document.querySelectorAll('.diag-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.diag-panel').forEach(p => p.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  document.getElementById(`panel-${type}`).classList.add('active');
+}
+
+/* ============================================
+   MOBILE NAV
+   ============================================ */
+function toggleMobileNav() {
+  document.getElementById('mobileNav').classList.toggle('active');
+}
+function closeMobileNav() {
+  document.getElementById('mobileNav').classList.remove('active');
+}
+
+/* ============================================
+   SCROLL ANIMATION
+   ============================================ */
+function initScrollAnim() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+}
+
+/* ============================================
+   INIT
+   ============================================ */
+document.addEventListener('DOMContentLoaded', () => {
+  renderJobs();
+  renderSchools();
+  setApplyUrl();
+  renderDiag('student');
+  renderDiag('teacher');
+  initScrollAnim();
+});
+</script>
+</body>
+</html>
