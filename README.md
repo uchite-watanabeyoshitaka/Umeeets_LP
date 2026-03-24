@@ -1,0 +1,10 @@
+![大工体験](https://github.com/user-attachments/assets/6fd26a15-1e04-4108-b841-9282ec9c97c4)
+![足場](https://github.com/user-attachments/assets/dc28bce8-cf64-4097-9d19-de9838cd5289)
+![左官体験](https://github.com/user-attachments/assets/b4ad0b2c-5084-419a-8b31-aaf3aa4eef91)
+![交通誘導](https://github.com/user-attachments/assets/8e4aedca-d25d-46b4-86e7-9bd8258a7083)
+![救命活動＆モールス信号・装甲車展示](https://github.com/user-attachments/assets/c5ebd006-8eec-4330-89fb-4e1ff925992c)
+![引越作業](https://github.com/user-attachments/assets/f971c3d7-79a4-468c-94f6-fa4cfa0bc513)
+![プレミストドーム写真](https://github.com/user-attachments/assets/75fabc12-14e3-469a-b616-419585ec429c)
+![bonus_img_2](https://github.com/user-attachments/assets/5da335b7-2634-4b70-a07c-51b01b494fd7)
+![bonus_img_0](https://github.com/user-attachments/assets/ab984e0f-62c4-49ba-bbbf-310f6906eb3b)
+<img width="209" height="57" alt="20_0820_Ustory_logo_yoko" src="https://github.com/user-attachments/assets/e0b908fa-57eb-4610-9b3c-acf68fa778b0" />
